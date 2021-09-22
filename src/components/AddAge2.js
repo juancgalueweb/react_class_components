@@ -8,10 +8,7 @@ class AddAge2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: "Joe",
-      lastName: "Russell",
       age: 21,
-      hairColor: "brown",
     };
   }
 
@@ -22,7 +19,8 @@ class AddAge2 extends Component {
   };
 
   render() {
-    const { firstName, lastName, age, hairColor } = this.state;
+    const { age } = this.state;
+    const { firstName, lastName, hairColor } = this.props;
     return (
       <Container>
         <Row>
